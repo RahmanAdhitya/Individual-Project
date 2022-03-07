@@ -9,12 +9,18 @@ const NavBar = () => {
     <Flex bg="red.400" mb={2}>
       <Flex>
         <Menu>
-          <MenuButton ms={4} mt={1} mb={1}>
+          <MenuButton ms={1} mt={1} mb={1}>
             <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
           </MenuButton>
           <MenuList>
-            <MenuItem>My Profile</MenuItem>
-            <MenuItem>Sign-out</MenuItem>
+            <MenuOptionGroup title="Account" type="none">
+              <MenuItemOption>My Profile</MenuItemOption>
+              <MenuItemOption>My Favorite</MenuItemOption>
+            </MenuOptionGroup>
+            <MenuDivider />
+            <MenuGroup>
+              <MenuItem>Sign-out</MenuItem>
+            </MenuGroup>
           </MenuList>
         </Menu>
         <Box mt={2} ms={2}>

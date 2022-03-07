@@ -4,6 +4,7 @@ import User from './Card/User';
 import { Icon } from '@chakra-ui/react';
 import { GrFavorite } from 'react-icons/gr';
 import { FaRegComment } from 'react-icons/fa';
+import Comment from './Card/comment';
 
 const Content = () => {
   return (
@@ -14,19 +15,8 @@ const Content = () => {
         <Box>
           <User />
         </Box>
-        <Flex direction="column" margin={2} mt="250px">
-          <Flex>
-            <Square>
-              <Icon boxSize={6} as={GrFavorite} />
-            </Square>
-            <Square ml="2">
-              <Icon boxSize={6} as={FaRegComment} />
-            </Square>
-          </Flex>
-          <Text fontSize="smaller">
-            <Text fontSize="sm">UI Engineer</Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, animi. Saepe aspernatur animi sed, labore, similique nam natus quidem eveniet iste accusantium eum asperiores, officia ipsam placeat nisi perspiciatis temporibus?
-          </Text>
+        <Flex direction="column" margin={2} mt="300px">
+          <Comment />
         </Flex>
       </Box>
       <Spacer />

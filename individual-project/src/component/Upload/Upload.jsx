@@ -1,0 +1,49 @@
+import { AddIcon } from '@chakra-ui/icons';
+import { Button, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, Stack, FormLabel, Textarea, DrawerFooter, Box, Input, InputGroup, Select, Circle } from '@chakra-ui/react';
+import React from 'react';
+import { useState } from 'react';
+import { useDisclosure } from '@chakra-ui/react';
+
+const Upload = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const firstField = React.useRef();
+
+  return (
+    <>
+      <Button leftIcon={<AddIcon />} colorScheme="teal" onClick={onOpen}>
+        New Post
+      </Button>
+      <Drawer isOpen={isOpen} placement="right" initialFocusRef={firstField} onClose={onClose}>
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerHeader borderBottomWidth="1px">Post a Moment</DrawerHeader>
+
+          <DrawerBody>
+            <Stack spacing="24px">
+              <Box>
+                <FormLabel htmlFor="url">File</FormLabel>
+                <InputGroup>
+                  <Input type="url" id="url" placeholder="Chose your moment" />
+                </InputGroup>
+              </Box>
+
+              <Box>
+                <FormLabel htmlFor="desc">Caption</FormLabel>
+                <Textarea id="desc" />
+              </Box>
+            </Stack>
+          </DrawerBody>
+
+          <DrawerFooter borderTopWidth="1px">
+            <Button variant="outline" mr={3} onClick={onClose}>
+              Cancel
+            </Button>
+            <Button colorScheme="blue">Post</Button>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
+    </>
+  );
+};
+
+export default Upload;

@@ -1,27 +1,17 @@
 import React from 'react';
-import { Flex, Spacer, Box, Image, Square, Text } from '@chakra-ui/react';
-import User from './Card/User';
-import { Icon } from '@chakra-ui/react';
-import { GrFavorite } from 'react-icons/gr';
-import { FaRegComment } from 'react-icons/fa';
+import { Flex, Box, Center } from '@chakra-ui/react';
 import Comment from './Card/comment';
 
-const Content = () => {
+const Content = ({ imageURL, username, caption, location }) => {
   return (
-    <Flex>
-      <Box />
-      <Spacer />
-      <Box bgImg={'https://bit.ly/2Z4KKcF'} maxW="sm" height="md" borderWidth="1px" borderRadius="lg" overflow="hidden" shadow="lg">
-        <Box>
-          <User />
-        </Box>
-        <Flex direction="column" margin={2} mt="300px">
-          <Comment />
+    <Center>
+      <Box shadow="base">
+        <Flex margin={4}>
+          <Box bgImg={imageURL} w="lg" height="md" borderWidth="1px" borderRadius="lg" shadow="lg" />
+          <Comment username={username} caption={caption} location={location} />
         </Flex>
       </Box>
-      <Spacer />
-      <Box />
-    </Flex>
+    </Center>
   );
 };
 

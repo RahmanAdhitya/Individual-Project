@@ -1,8 +1,8 @@
 import React from 'react';
 import { Menu, MenuButton, MenuList, MenuItem, MenuItemOption, MenuGroup, MenuOptionGroup, MenuDivider } from '@chakra-ui/react';
 import { Button, Text, Box, Flex, Spacer, Avatar } from '@chakra-ui/react';
-import { ChevronDownIcon } from '@chakra-ui/icons';
 import Upload from '../Upload/Upload';
+import UserProfile from '../UserProfile/UserProfile';
 
 const NavBar = () => {
   return (
@@ -14,8 +14,11 @@ const NavBar = () => {
           </MenuButton>
           <MenuList>
             <MenuOptionGroup title="Account" type="none">
-              <MenuItemOption>My Profile</MenuItemOption>
-              <MenuItemOption>My Favorite</MenuItemOption>
+              <UserProfile />
+            </MenuOptionGroup>
+            <MenuOptionGroup title="Moment" type="none">
+              <MenuItemOption>Notification</MenuItemOption>
+              <MenuItemOption>Favorite</MenuItemOption>
             </MenuOptionGroup>
             <MenuDivider />
             <MenuGroup>

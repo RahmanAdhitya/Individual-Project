@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Box, Button, Flex, Input, InputGroup, InputRightElement, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Input, InputGroup, InputRightElement, Spacer, Text } from '@chakra-ui/react';
 import { Icon } from '@chakra-ui/react';
 import { IoEyeSharp, IoEyeOffSharp } from 'react-icons/io5';
+import Register from '../component/RegisterPage/Register';
 
 const Login = () => {
   const [show, setShow] = React.useState(false);
@@ -18,7 +19,7 @@ const Login = () => {
             <InputGroup mt={2} size="md">
               <Input pr="4.5rem" type={show ? 'text' : 'password'} placeholder="Enter password" />
               <InputRightElement me={0} width="4.5rem">
-                <Button h="1.75rem" size="sm" onClick={handleClick}>
+                <Button bg={'white.100'} size="sm" onClick={handleClick}>
                   {show ? Hide : Show}
                 </Button>
               </InputRightElement>
@@ -35,7 +36,10 @@ const Login = () => {
         </Box>
       </Flex>
       <Box mt={3} mb={3} textAlign={'center'}>
-        <Text>Don't have an account? Sign up</Text>
+        <Text justifyContent={'center'} display={'center'}>
+          Don't have an account?
+          <Register />
+        </Text>
       </Box>
     </>
   );

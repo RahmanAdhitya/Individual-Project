@@ -1,9 +1,10 @@
 import { AddIcon } from '@chakra-ui/icons';
-import { Button, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, Stack, FormLabel, Textarea, DrawerFooter, Box, Input, InputGroup, Select, Circle } from '@chakra-ui/react';
+import { Button, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, Stack, FormLabel, Textarea, DrawerFooter, Box, Input, InputGroup } from '@chakra-ui/react';
 import React from 'react';
 import { useState } from 'react';
 import { useDisclosure } from '@chakra-ui/react';
 
+// componen ini di import ke navbar//
 const Upload = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const firstField = React.useRef();

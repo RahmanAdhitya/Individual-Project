@@ -1,21 +1,28 @@
 import React from 'react';
-import { Box, Button, Collapse, Text } from '@chakra-ui/react';
+import { Box, Flex, Input, Text } from '@chakra-ui/react';
 import { useState } from 'react';
+import { Icon } from '@chakra-ui/react';
+import { GrFavorite } from 'react-icons/gr';
+import { FiSend } from 'react-icons/fi';
+import User from './User';
 
-function Comment() {
-  const [show, setShow] = React.useState(false);
-
-  const handleToggle = () => setShow(!show);
-
+function Comment({ caption, username, location }) {
   return (
-    <>
-      <Collapse startingHeight={10} in={show}>
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-      </Collapse>
-      <Button size="sm" onClick={handleToggle} mt="1rem">
-        Show {show ? 'Less' : 'More'}
-      </Button>
-    </>
+    <Box display="flex" flexDirection="column" width="sm" justifyContent="space-between">
+      <Box>
+        <User username={username} location={location} />
+        <Text ms={2}>
+          <Text textAlign="left" fontSize="small">
+            {caption}
+          </Text>
+        </Text>
+      </Box>
+      <Flex ms={3} justifyContent="space-between" alignItems="center">
+        <Input width="xs" variant="flushed" placeholder="Comment" />
+        <Icon boxSize={5} as={FiSend} />
+        <Icon boxSize={5} as={GrFavorite} />
+      </Flex>
+    </Box>
   );
 }
 

@@ -3,6 +3,7 @@ import { Menu, MenuButton, MenuList, MenuItem, MenuItemOption, MenuGroup, MenuOp
 import { Button, Text, Box, Flex, Spacer, Avatar } from '@chakra-ui/react';
 import Upload from '../Upload/Upload';
 import UserProfile from '../UserProfile/UserProfile';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -22,7 +23,9 @@ const NavBar = () => {
             </MenuOptionGroup>
             <MenuDivider />
             <MenuGroup>
-              <MenuItem>Sign-out</MenuItem>
+              <MenuItem>
+                <Link to="/login">Sign-out</Link>
+              </MenuItem>
             </MenuGroup>
           </MenuList>
         </Menu>

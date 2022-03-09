@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { Box, Button, Flex, Input, InputGroup, InputRightElement, Spacer, Text } from '@chakra-ui/react';
+import React from 'react';
+import { Box, Button, Flex, Input, InputGroup, InputRightElement, Text } from '@chakra-ui/react';
 import { Icon } from '@chakra-ui/react';
 import { IoEyeSharp, IoEyeOffSharp } from 'react-icons/io5';
 import Register from '../component/RegisterPage/Register';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [show, setShow] = React.useState(false);
@@ -24,9 +25,11 @@ const Login = () => {
                 </Button>
               </InputRightElement>
             </InputGroup>
-            <Button mt={3} width={'100%'} justifyContent={'center'}>
-              Log In
-            </Button>
+            <Link to="/">
+              <Button mt={3} width={'100%'} justifyContent={'center'}>
+                Log In
+              </Button>
+            </Link>
             <Box mt={2} textAlign={'center'}>
               <Text as="" fontSize={'xs'}>
                 Forgot Password?

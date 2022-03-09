@@ -17,14 +17,20 @@ const Upload = () => {
       <Drawer isOpen={isOpen} placement="right" initialFocusRef={firstField} onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Post a Moment</DrawerHeader>
+          <DrawerHeader borderBottomWidth="1px">Shares Moment</DrawerHeader>
 
           <DrawerBody>
             <Stack spacing="24px">
               <Box>
-                <FormLabel htmlFor="url">File</FormLabel>
+                <FormLabel htmlFor="url">Add a Moment</FormLabel>
                 <InputGroup>
                   <Input type="url" id="url" placeholder="Chose your moment" />
+                </InputGroup>
+              </Box>
+              <Box>
+                <FormLabel htmlFor="url">Location</FormLabel>
+                <InputGroup>
+                  <Input type="text" placeholder="Location" />
                 </InputGroup>
               </Box>
 
@@ -39,7 +45,7 @@ const Upload = () => {
             <Button variant="outline" mr={3} onClick={onClose}>
               Cancel
             </Button>
-            <Button colorScheme="blue">Post</Button>
+            <Button colorScheme="blue">Share</Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

@@ -16,15 +16,14 @@ const UserProfile = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerHeader borderBottomWidth="1px">
-            <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+            <Avatar size="xl" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+            <Input mt={2} variant="flushed" placeholder="UserName" />
           </DrawerHeader>
           {/* my profile akan berubah sesui dengan nama usernya dalam tampilan avatar */}
 
           <DrawerBody>
             <Stack spacing="24px">
               <Box>
-                <FormLabel mb={0}>User Name</FormLabel>
-                <Input mb={2} variant="flushed" placeholder="UserName" />
                 <FormLabel mb={0}>Email</FormLabel>
                 <Input mb={2} variant="flushed" placeholder="email" />
               </Box>

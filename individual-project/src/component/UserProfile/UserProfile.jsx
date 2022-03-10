@@ -17,7 +17,7 @@ const UserProfile = () => {
         <DrawerContent>
           <DrawerHeader borderBottomWidth="1px">
             <Avatar size="xl" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-            <Input mt={2} variant="flushed" placeholder="UserName" />
+            <Input mt={2} variant="flushed" placeholder="User Name" />
           </DrawerHeader>
           {/* my profile akan berubah sesui dengan nama usernya dalam tampilan avatar */}
 

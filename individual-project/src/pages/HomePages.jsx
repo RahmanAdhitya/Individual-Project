@@ -1,20 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import Content from '../component/Content/Content';
-import { API_URL } from '../config/api';
-import axios from 'axios';
+import { axiosInstance } from '../configs/api';
+import { Box } from '@chakra-ui/react';
 
 const HomePages = () => {
   const [contentList, setContentList] = useState([]);
 
   const fetchContentList = () => {
-    axios.get(`${API_URL}/posts`).then((res) => {
-      setContentList(res.data);
-    });
+    axiosInstance
+      .get(`/posts`)
+      .then((res) => {
+        setContentList(res.data);
+      })
+      .catch((err) => console.log(err));
   };
 
   const renderContentList = () => {
     return contentList.map((val) => {
-      return <Content username={val.username} location={val.location} imageURL={val.image_url} caption={val.caption} id={val.id} />;
+      return <Content username={val.username} caption={val.caption} image={val.image_url} location={val.location} likes={val.number_of_likes} id={val.id} />;
     });
   };
 
@@ -22,7 +25,6 @@ const HomePages = () => {
     fetchContentList();
   }, []);
 
-  return <div>{renderContentList()}</div>;
+  return <Box>{renderContentList()}</Box>;
 };
-
 export default HomePages;

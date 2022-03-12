@@ -1,14 +1,28 @@
 import React from 'react';
-import { Flex, Box, Center } from '@chakra-ui/react';
-import Comment from './Card/comment';
+import { Flex, Box, Center, Text, Avatar, Image } from '@chakra-ui/react';
 
-const Content = ({ imageURL, username, caption, location }) => {
+const Content = (props) => {
   return (
-    <Center>
-      <Box shadow="base">
-        <Flex margin={4}>
-          <Box bgImg={imageURL} w="lg" height="md" borderWidth="1px" borderRadius="lg" shadow="lg" />
-          <Comment username={username} caption={caption} location={location} />
+    <Center margin={6}>
+      <Box shadow="md" borderRadius="md" borderWidth="1px">
+        <Flex>
+          <Flex width="xl">
+            <Box margin={4}>
+              <Image src={props.image} borderRadius="md" maxW="full" />
+            </Box>
+          </Flex>
+          <Box mt="4" mb="4" borderLeft="1px" borderLeftColor="pink.400">
+            <Box display="flex" ms="4" width="sm">
+              <Avatar size="lg" name="Kola Tioluwani" src="https://bit.ly/kent-c-dodds" border="4px" borderColor="blue" />
+              <Text ms="3" textTransform="capitalize" fontSize="xl" fontWeight="bold">
+                {props.username}
+                <Text>{props.location}</Text>
+              </Text>
+            </Box>
+            <Box width="sm" margin={4} fontSize="sm">
+              {props.caption}
+            </Box>
+          </Box>
         </Flex>
       </Box>
     </Center>

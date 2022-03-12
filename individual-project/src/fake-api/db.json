@@ -23,6 +23,93 @@
       "number_of_likes": 123534,
       "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore enim praesentium inventore asperiores sunt corporis unde dicta ipsa dolorum voluptatibus dolor, odio nobis est consequuntur labore!",
       "id": 3
+    },
+    {
+      "username": "andi",
+      "caption": "test aja deh",
+      "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "location": "tangerang",
+      "likes": "1234",
+      "id": 4
+    },
+    {
+      "username": "jono",
+      "caption": "test aja deh",
+      "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "location": "tangerang",
+      "likes": "1234",
+      "id": 5
+    },
+    {
+      "username": "Agus",
+      "caption": "Ngeband dulu",
+      "image_url": "https://images.unsplash.com/photo-1646194840487-e8d3586533a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80",
+      "location": "Tangerang Kota",
+      "likes": "2",
+      "id": 6
+    },
+    {
+      "username": "dadang",
+      "caption": "test lagi ya",
+      "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "location": "medan",
+      "likes": "3",
+      "id": 7
+    }
+  ],
+  "user_accounts": [
+    {
+      "id": 1,
+      "username": "seto",
+      "password": "password123",
+      "email": "seto@mail.com",
+      "first-name": "Seto",
+      "last-name": "Otes",
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "username": "bill",
+      "password": "password123",
+      "email": "bill@mail.com",
+      "first-name": "Bill",
+      "last_name": "Gates",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "Mark",
+      "password": "password123",
+      "email": "mark@mail.com",
+      "first_name": "Mark",
+      "last_name": "Zuckerber",
+      "role": "user"
+    },
+    {
+      "username": "tes",
+      "password": "tes",
+      "first_name": "adhitya",
+      "last_name": "rahman",
+      "email": "tes",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "function () { [native code] }": "",
+      "id": 5
+    },
+    {
+      "function () { [native code] }": "",
+      "id": 6
+    },
+    {
+      "username": "tesst2",
+      "password": "test2",
+      "first_name": "adhitya2",
+      "last_name": "rahman2",
+      "email": "test2",
+      "role": "user",
+      "id": 7
     }
   ]
 }

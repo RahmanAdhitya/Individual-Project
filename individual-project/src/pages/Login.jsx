@@ -50,7 +50,6 @@ const Login = () => {
         localStorage.setItem('user_data', JSON.stringify(userData));
       })
       .catch((err) => console.log(err));
-    console.log('berhasil');
   };
 
   if (userSelector.id) {

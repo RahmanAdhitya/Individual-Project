@@ -18,6 +18,7 @@ const NavBar = () => {
     });
     localStorage.removeItem('user_data');
   };
+
   return (
     <Flex bg="red.400" mb={2}>
       <Flex>
@@ -36,14 +37,21 @@ const NavBar = () => {
             <MenuDivider />
             <MenuGroup>
               <MenuItem>
-                <Link to="/login">Sign-out</Link>
+                <Link
+                  to="/login"
+                  onClick={() => {
+                    logoutButtonHandler();
+                  }}
+                >
+                  Sign-out
+                </Link>
               </MenuItem>
             </MenuGroup>
           </MenuList>
         </Menu>
         <Box mt={2} ms={2}>
-          <Text fontWeight="bold">Segun Adebayo</Text>
-          <Text fontSize="sm">UI Engineer</Text>
+          <Text fontWeight="bold">{userSelector.id ? `hello ${userSelector.username}` : null}</Text>
+          <Text fontSize="sm">{userSelector.id ? `${userSelector.role}` : null}</Text>
         </Box>
       </Flex>
       <Spacer />

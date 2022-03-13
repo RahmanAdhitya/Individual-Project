@@ -27,8 +27,16 @@ function Register() {
   };
 
   const inputButtonHandler = () => {
-    const newAccount = { username: newUserAccount.username, password: newUserAccount.password, first_name: newUserAccount.first_name, last_name: newUserAccount.last_name, email: newUserAccount.email, role: 'user' };
+    const newAccount = {
+      username: newUserAccount.username,
+      password: newUserAccount.password,
+      first_name: newUserAccount.first_name,
+      last_name: newUserAccount.last_name,
+      email: newUserAccount.email,
+      role: 'user',
+    };
     axiosInstance.post(`/user_accounts`, newAccount);
+    setNewUserAccount({});
   };
 
   return (

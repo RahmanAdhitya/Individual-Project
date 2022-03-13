@@ -1,59 +1,39 @@
 {
   "posts": [
     {
+      "user_accountId": 1,
       "username": "seto",
-      "location": "BSD",
-      "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "number_of_likes": 213424,
-      "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore enim praesentium inventore asperiores sunt corporis unde dicta ipsa dolorum voluptatibus dolor, odio nobis est consequuntur labore!",
-      "id": 1
-    },
-    {
-      "username": "mark",
-      "location": "Jakarta",
+      "caption": "test",
       "image_url": "https://images.unsplash.com/photo-1644982648600-4583461837f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1724&q=80",
-      "number_of_likes": 53451,
-      "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore enim praesentium inventore asperiores sunt corporis unde dicta ipsa dolorum voluptatibus dolor, odio nobis est consequuntur labore!",
-      "id": 2
-    },
-    {
-      "username": "Bill",
-      "location": "Bandung",
-      "image_url": "https://images.unsplash.com/photo-1646194840487-e8d3586533a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80",
-      "number_of_likes": 123534,
-      "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore enim praesentium inventore asperiores sunt corporis unde dicta ipsa dolorum voluptatibus dolor, odio nobis est consequuntur labore!",
-      "id": 3
-    },
-    {
-      "username": "andi",
-      "caption": "test aja deh",
-      "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "location": "tangerang",
-      "likes": "1234",
+      "location": "Jakarta",
+      "likes": "0",
       "id": 4
     },
     {
-      "username": "jono",
-      "caption": "test aja deh",
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "loremipsun wae",
       "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "location": "tangerang",
-      "likes": "1234",
+      "location": "bandung",
+      "likes": "",
       "id": 5
     },
     {
-      "username": "Agus",
-      "caption": "Ngeband dulu",
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "test",
       "image_url": "https://images.unsplash.com/photo-1646194840487-e8d3586533a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80",
-      "location": "Tangerang Kota",
-      "likes": "2",
+      "location": "lampung",
+      "likes": "0",
       "id": 6
     },
     {
-      "username": "dadang",
-      "caption": "test lagi ya",
-      "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "location": "medan",
-      "likes": "3",
+      "user_accountId": 2,
+      "username": "bill",
+      "caption": "ini bill yang post loh",
+      "image_url": "https://images.unsplash.com/photo-1646194840487-e8d3586533a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80",
+      "location": "Tangerang Kota",
+      "likes": "0",
       "id": 7
     }
   ],
@@ -95,14 +75,6 @@
       "id": 4
     },
     {
-      "function () { [native code] }": "",
-      "id": 5
-    },
-    {
-      "function () { [native code] }": "",
-      "id": 6
-    },
-    {
       "username": "tesst2",
       "password": "test2",
       "first_name": "adhitya2",
@@ -110,6 +82,15 @@
       "email": "test2",
       "role": "user",
       "id": 7
+    },
+    {
+      "username": "Adhitya Rahman",
+      "password": "password123",
+      "first_name": "adhitya",
+      "last_name": "rahman",
+      "email": "rahman@adhit.com",
+      "role": "user",
+      "id": 8
     }
   ]
 }

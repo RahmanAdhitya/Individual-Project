@@ -1,13 +1,17 @@
-import { AddIcon } from '@chakra-ui/icons';
-import { Avatar, Button, Drawer, DrawerOverlay, DrawerContent, MenuItemOption, DrawerHeader, DrawerBody, Stack, FormLabel, Textarea, DrawerFooter, Box, Input } from '@chakra-ui/react';
+import { Icon } from '@chakra-ui/react';
+import { FiEdit } from 'react-icons/fi';
+import { Text, Avatar, Button, Drawer, DrawerOverlay, DrawerContent, MenuItemOption, DrawerHeader, DrawerBody, Stack, FormLabel, Textarea, DrawerFooter, Box, Input } from '@chakra-ui/react';
 import React from 'react';
 import { useState } from 'react';
 import { useDisclosure } from '@chakra-ui/react';
+import { useSelector, useDispatch } from 'react-redux';
 
 // componen ini di import ke navbar//
 const UserProfile = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const firstField = React.useRef();
+
+  const userSelector = useSelector((state) => state.auth);
 
   return (
     <>
@@ -16,8 +20,9 @@ const UserProfile = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerHeader borderBottomWidth="1px">
-            <Avatar size="xl" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-            <Input mt={2} variant="flushed" placeholder="User Name" />
+            <Avatar size="xl" name={userSelector.id ? userSelector.username : null} src="https://bit.ly/dan-abramov" />
+            {/* {edit ? <Input mt={2} variant="flushed" placeholder={userSelector.username} /> :  */}
+            <Text fontWeight="bold">{userSelector.username}</Text>
           </DrawerHeader>
           {/* my profile akan berubah sesui dengan nama usernya dalam tampilan avatar */}
 
@@ -25,7 +30,8 @@ const UserProfile = () => {
             <Stack spacing="24px">
               <Box>
                 <FormLabel mb={0}>Email</FormLabel>
-                <Input mb={2} variant="flushed" placeholder="email" />
+                {/* <Input mb={2} variant="flushed" placeholder="email" /> */}
+                <Text fontWeight="bold">{userSelector.email}</Text>
               </Box>
 
               <Box>
@@ -36,10 +42,7 @@ const UserProfile = () => {
           </DrawerBody>
 
           <DrawerFooter borderTopWidth="1px">
-            <Button variant="outline" mr={3} onClick={onClose}>
-              Cancel
-            </Button>
-            <Button colorScheme="blue">Post</Button>
+            <Button colorScheme="blue">Edit</Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

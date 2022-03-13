@@ -4,11 +4,16 @@ import React from 'react';
 import { useState } from 'react';
 import { useDisclosure } from '@chakra-ui/react';
 import { axiosInstance } from '../../configs/api';
+import { useSelector } from 'react-redux';
 
 // componen ini di import ke navbar//
 const Upload = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const firstField = React.useRef();
+
+  const userSelector = useSelector((state) => state.auth);
+  // const postSelector = useSelector((state) => state.post);
+
   const [inputValue, setInputValue] = useState({
     username: '',
     location: '',
@@ -28,7 +33,14 @@ const Upload = () => {
 
   const addMoment = () => {
     console.log('berfungsi');
-    const newMoment = { username: inputValue.username, caption: inputValue.caption, image_url: inputValue.imgURL, location: inputValue.location, likes: inputValue.likes };
+    const newMoment = {
+      user_accountId: userSelector.id,
+      username: userSelector.username,
+      caption: inputValue.caption,
+      image_url: inputValue.imgURL,
+      location: inputValue.location,
+      likes: inputValue.likes,
+    };
     axiosInstance.post(`/posts`, newMoment);
   };
 
@@ -45,10 +57,6 @@ const Upload = () => {
           <DrawerBody>
             <Stack spacing="24px">
               <Box>
-                <FormLabel htmlFor="url">your name</FormLabel>
-                <InputGroup>
-                  <Input onChange={inputHandler} type="text" name="username" placeholder="username" />
-                </InputGroup>
                 <FormLabel htmlFor="url">Add a Moment</FormLabel>
                 <InputGroup>
                   <Input onChange={inputHandler} type="url" name="imgURL" placeholder="Chose your moment" />

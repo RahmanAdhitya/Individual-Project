@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useDisclosure } from '@chakra-ui/react';
 import { axiosInstance } from '../../configs/api';
 import { useSelector } from 'react-redux';
+import { Navigate } from 'react-router-dom';
 
 // componen ini di import ke navbar//
 const Upload = () => {
@@ -32,7 +33,6 @@ const Upload = () => {
   };
 
   const addMoment = () => {
-    console.log('berfungsi');
     const newMoment = {
       user_accountId: userSelector.id,
       username: userSelector.username,

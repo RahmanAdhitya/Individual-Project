@@ -1,4 +1,4 @@
-import { Button, Input, Modal, ModalOverlay, FormControl, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, FormLabel, Text } from '@chakra-ui/react';
+import { Button, Input, Modal, ModalOverlay, FormControl, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, FormLabel, Text, Alert, AlertIcon } from '@chakra-ui/react';
 import { useDisclosure } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { axiosInstance } from '../../configs/api';
@@ -36,7 +36,6 @@ function Register() {
       role: 'user',
     };
     axiosInstance.post(`/user_accounts`, newAccount);
-    setNewUserAccount({});
   };
 
   return (

@@ -1,0 +1,289 @@
+{
+  "posts": [
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "test",
+      "image_url": "https://images.unsplash.com/photo-1644982648600-4583461837f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1724&q=80",
+      "location": "Jakarta",
+      "likes": "0",
+      "id": 4
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "loremipsun wae",
+      "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "location": "bandung",
+      "likes": "",
+      "id": 5
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "test",
+      "image_url": "https://images.unsplash.com/photo-1646194840487-e8d3586533a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80",
+      "location": "lampung",
+      "likes": "0",
+      "id": 6
+    },
+    {
+      "user_accountId": 2,
+      "username": "bill",
+      "caption": "ini bill yang post loh",
+      "image_url": "https://images.unsplash.com/photo-1646194840487-e8d3586533a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80",
+      "location": "Tangerang Kota",
+      "likes": "0",
+      "id": 7
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "test",
+      "image_url": "https://images.unsplash.com/photo-1646194840487-e8d3586533a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80",
+      "location": "Jakarta",
+      "likes": "",
+      "id": 8
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "rwrsr",
+      "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "location": "medan",
+      "likes": "",
+      "id": 9
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "rwrsr",
+      "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "location": "medan",
+      "likes": "",
+      "id": 10
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "ghg",
+      "image_url": "https://images.unsplash.com/photo-1646194840487-e8d3586533a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80",
+      "location": "bandung",
+      "likes": "",
+      "id": 11
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "asd",
+      "image_url": "https://images.unsplash.com/photo-1644982648600-4583461837f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1724&q=80",
+      "location": "Jakarta",
+      "likes": "",
+      "id": 12
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "asd",
+      "image_url": "https://images.unsplash.com/photo-1644982648600-4583461837f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1724&q=80",
+      "location": "Jakarta",
+      "likes": "",
+      "id": 13
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "sdfsa",
+      "image_url": "https://images.unsplash.com/photo-1644982648600-4583461837f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1724&q=80",
+      "location": "Jakarta",
+      "likes": "3",
+      "id": 14
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "",
+      "location": "",
+      "likes": "",
+      "id": 15
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "",
+      "location": "",
+      "likes": "3sdfa",
+      "id": 16
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "",
+      "location": "",
+      "likes": "",
+      "id": 17
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "asdf",
+      "image_url": "https://images.unsplash.com/photo-1644982648600-4583461837f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1724&q=80",
+      "location": "lampung",
+      "likes": "",
+      "id": 18
+    },
+    {
+      "user_accountId": 1,
+      "username": "seto",
+      "caption": "w",
+      "image_url": "https://images.unsplash.com/photo-1644982648600-4583461837f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1724&q=80",
+      "location": "lampung",
+      "likes": "",
+      "id": 19
+    }
+  ],
+  "user_accounts": [
+    {
+      "id": 1,
+      "username": "seto",
+      "password": "password123",
+      "email": "seto@mail.com",
+      "first-name": "Seto",
+      "last-name": "Otes",
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "username": "bill",
+      "password": "password123",
+      "email": "bill@mail.com",
+      "first-name": "Bill",
+      "last_name": "Gates",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "Mark",
+      "password": "password123",
+      "email": "mark@mail.com",
+      "first_name": "Mark",
+      "last_name": "Zuckerber",
+      "role": "user"
+    },
+    {
+      "username": "tes",
+      "password": "tes",
+      "first_name": "adhitya",
+      "last_name": "rahman",
+      "email": "tes",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "username": "tesst2",
+      "password": "test2",
+      "first_name": "adhitya2",
+      "last_name": "rahman2",
+      "email": "test2",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "username": "Adhitya Rahman",
+      "password": "password123",
+      "first_name": "adhitya",
+      "last_name": "rahman",
+      "email": "rahman@adhit.com",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "username": "dindadinda",
+      "password": "password123",
+      "first_name": "dinda`dinda",
+      "last_name": "dinda",
+      "email": "dinda@mail.com",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "username": "dewi",
+      "password": "password123",
+      "first_name": "dewi",
+      "last_name": "dinda",
+      "email": "dewidewi@mail.com",
+      "role": "user",
+      "id": 10
+    },
+    {
+      "username": "bambang",
+      "password": "password123",
+      "confirmPassword": "password123",
+      "first_name": "seto",
+      "last_name": "seto",
+      "email": "bambang@mail..com",
+      "role": "user",
+      "id": 12
+    },
+    {
+      "username": "seto",
+      "password": "password123",
+      "confirmPassword": "password123",
+      "first_name": "seto",
+      "last_name": "seto",
+      "email": "seto@mail..com",
+      "role": "user",
+      "id": 13
+    },
+    {
+      "username": "andi",
+      "password": "password123",
+      "confirmPassword": "password123",
+      "first_name": "tes",
+      "last_name": "tes",
+      "email": "seto@mail.com",
+      "role": "user",
+      "id": 14
+    },
+    {
+      "username": "seto",
+      "password": "password123",
+      "confirmPassword": "password123",
+      "first_name": "tes",
+      "last_name": "tes",
+      "email": "jono@mail.com",
+      "role": "user",
+      "id": 15
+    },
+    {
+      "username": "bandung",
+      "password": "password123",
+      "confirmPassword": "password123",
+      "first_name": "tes",
+      "last_name": "tes",
+      "email": "seto@mail.com",
+      "role": "user",
+      "id": 16
+    },
+    {
+      "username": "seto",
+      "password": "password123",
+      "confirmPassword": "password123",
+      "first_name": "tes",
+      "last_name": "tes",
+      "email": "agus@mail.com",
+      "role": "user",
+      "id": 17
+    },
+    {
+      "username": "seto",
+      "password": "password123",
+      "confirmPassword": "password123",
+      "first_name": "tes",
+      "last_name": "tes",
+      "email": "bambang@mail.com",
+      "role": "user",
+      "id": 18
+    }
+  ]
+}
